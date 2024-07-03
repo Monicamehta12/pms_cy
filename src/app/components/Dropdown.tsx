@@ -2,6 +2,7 @@ import { Fragment } from 'react';
 import { Menu, Transition } from '@headlessui/react';
 import { ChevronDownIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Dropdown() {
     const handleLogout = () => {
@@ -13,7 +14,7 @@ export default function Dropdown() {
         <div className="relative inline-block text-left">
             <Menu as="div">
                 <Menu.Button className="flex items-center text-white focus:outline-none">
-                    <img src="images/p-img (2).jpg" alt="Profile" className="h-8 w-8 rounded-full" />
+                <Image src="/images/p-img (2).jpg" alt="Profile" className="h-8 w-8 rounded-full" width={32} height={32} /> 
                     <ChevronDownIcon className="w-5 h-5 ml-2" />
                 </Menu.Button>
                 <Transition

@@ -165,6 +165,7 @@ export default function ProjectPage() {
                     <div className="flex flex-wrap justify-md-start pb-5">
                         {projects.map((item, index) => (
                             <Card
+                                key={index}
                                 projectId={item._id}
                                 projectName={item.projectName}
                                 startDate={item.startDate}
